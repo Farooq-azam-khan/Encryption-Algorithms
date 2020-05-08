@@ -1,4 +1,3 @@
-import cs50
 import sys
 
 def vigenere(plaintext, key):
@@ -34,7 +33,7 @@ def main():
     key = sys.argv[1]
 
     print("Plaintext: ", end=" ")
-    plaintext = cs50.get_string()
+    plaintext = input()
 
     vigenere_encryption = vigenere(plaintext, key)
     print(vigenere_encryption)
